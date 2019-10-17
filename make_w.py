@@ -37,5 +37,6 @@ def main(argv):
 	text.size = 0x400
 	bot.write(outputfile)
 
+
 if __name__ == "__main__":
 	main(sys.argv[1:])
