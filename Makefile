@@ -7,8 +7,8 @@ floatasm: float.asm
 hello: hello.asm
 	nasm -felf64 hello.asm && ld hello.o -o bin/hello
 
-sse: sse.asm
-	nasm -felf64 sse.asm && ld see.o -o bin/sse
+allxmm: allxmm.asm
+	nasm -felf64 allxmm.asm && ld allxmm.o -o bin/allxmm
 
 sse2: sse2.c
 	gcc -o bin/sse2 sse2.c
@@ -25,3 +25,5 @@ xmm: xmm.c
 longdouble: longdouble.c
 	gcc -o bin/ld longdouble.c
 
+ymm: ymm.asm
+	nasm -felf64 ymm.asm && ld ymm.o -o bin/ymm
