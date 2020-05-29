@@ -1,0 +1,6 @@
+bot: bot.asm
+    nasm -felf64 bot.asm && ld bot.o -o bin/bot && ./make_w.py -i bin/bot -o bin/botw && \
+    chmod +x bin/botw
+
+runbot:
+    r2 -d bin/botw -c "vpp"

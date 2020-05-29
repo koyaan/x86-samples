@@ -22,6 +22,9 @@ mmx: mmx.c
 xmm: xmm.c
 	gcc -o bin/xmm xmm.c
 
+doublet: doublet.c
+	gcc -o bin/doublet doublet.c
+
 longdouble: longdouble.c
 	gcc -o bin/ld longdouble.c
 
